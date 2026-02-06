@@ -1,0 +1,15 @@
+# 実行ファイル
+main
+
+# ビルドディレクトリ
+build/
+vcpkg_installed/
+
+# CMake 生成物（in-source build 対策）
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# IDE キャッシュ
+.cache/
