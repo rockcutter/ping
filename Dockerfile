@@ -24,6 +24,6 @@ RUN make local/build
 # final image
 FROM debian:stable-slim
 WORKDIR /app
-COPY --from=builder /app/build/release/bin/cppplayground .
+COPY --from=builder /app/build/debug/bin/cppplayground .
 CMD ["./cppplayground"]
 
