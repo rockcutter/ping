@@ -4,7 +4,7 @@
 int main() {
   httplib::Server svr;
 
-  svr.Get("/ping", [](const httplib::Request& req, httplib::Response& res) {
+  svr.Get("/ping", [](const httplib::Request&, httplib::Response& res) {
     spdlog::info("Received ping");
     res.set_content("pong", "text/plain");
   });
