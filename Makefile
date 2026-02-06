@@ -5,7 +5,7 @@ build:
 	docker build -t cppplayground .
 
 run: build
-	docker run --rm -it -p 8080:8080 cppplayground
+	docker run --rm --init -p 8080:8080 cppplayground
 
 compose/up:
 	docker compose up --build -d 
