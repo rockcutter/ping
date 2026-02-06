@@ -9,6 +9,7 @@ int main() {
     res.set_content("pong", "text/plain");
   });
 
+  spdlog::info("Starting server");
   svr.listen("0.0.0.0", 8080);
   return 0;
 }
